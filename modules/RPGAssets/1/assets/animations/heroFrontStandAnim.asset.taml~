@@ -1,0 +1,5 @@
+<AnimationAsset
+    AssetName="heroFrontStandAnim"
+    Image="@asset=RPGAssets:heroFrontImage"
+    AnimationFrames="4"
+    AnimationTime="2" />

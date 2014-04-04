@@ -1,0 +1,7 @@
+<ImageAsset
+    AssetName="heroSideImage"
+    ImageFile="heroSideImage.png"
+    CellCountX="7"
+    CellCountY="1"
+    CellWidth="17"
+    CellHeight="22" />

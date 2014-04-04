@@ -1,0 +1,10 @@
+<ModuleDefinition
+	ModuleId="RPGAssets"
+	VersionId="1"
+	Description="RPG Assets.  Particularly useful for the RPG!"
+>
+		<DeclaredAssets
+			Path="assets"
+			Extension="asset.taml"
+			Recurse="true"/>
+</ModuleDefinition>

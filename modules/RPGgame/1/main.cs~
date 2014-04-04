@@ -1,0 +1,84 @@
+//-----------------------------------------------------------------------------
+
+function RPGGame::create( %this )
+{
+    // We need a main "Scene" we can use as our game world.  The place where sceneObjects play.
+    // Give it a global name "mainScene" since we may want to access it directly in our scripts.
+    %scene = new Scene(mainScene);
+    
+
+    // Without a system window or "Canvas", we can't see or interact with our scene.
+    // AppCore initialized the Canvas already
+
+    // Now that we have a Canvas, we need a viewport into the scene.
+    // Give it a global name "mainWindow" since we may want to access it directly in our scripts.
+    new SceneWindow(mainWindow);
+    mainWindow.profile = new GuiControlProfile();
+    Canvas.setContent(mainWindow);
+
+    // Finally, connect our scene into the viewport (or sceneWindow).
+    // Note that a viewport comes with a camera built-in.
+    mainWindow.setScene(mainScene);
+    mainWindow.setCameraPosition( 0, 0 );
+    mainWindow.setCameraSize( 100, 75 );
+    
+    
+    //mainScene.setDebugOn( "aabb" );
+    //mainWindow.setCameraSize(200, 150);
+
+    // load some scripts and variables
+    	exec("./scripts/behaviors/movement/RPGControls.cs");
+    	exec("./scripts/buildLevel.cs");
+    	exec("./scripts/addObjects.cs");
+    
+    	//buildAquarium(mainScene);
+    	echo("@@@Loaded!!!");
+    	RPGGame.spawnHero();
+    	
+    	buildLevelOne();
+    	buildAquarium(%scene);
+    	
+}
+
+//-----------------------------------------------------------------------------
+
+function RPGGame::destroy( %this )
+{
+}
+
+function RPGGame::spawnHero( %this )
+{
+	%anim = "RPGAssets:heroFrontStandAnim";
+	%size = "5 5";
+	
+	%hero = new Sprite()
+	{
+		Animation = %anim;
+		//class = "Hero";
+		position = "0 0";
+		size = %size;
+		SceneLayer = "15";
+		SceneGroup = "15";
+		minSpeed = "5";
+		maxSpeed = "15";
+		CollisionCallback = true;
+	};
+	
+	%hero.setbodytype(dynamic);
+	%hero.FixedAngle = true;
+	%hero.oldPosX = "0";
+	%hero.oldPosY = "0";
+	%hero.newPosX = "0";
+	%hero.newPosY = "0";
+	%hero.createPolygonBoxCollisionShape(%size);
+	%hero.setCollisionShapeIsSensor(0, false);
+	%hero.setCollisionGroups( "15");
+	
+	//Set up Controls
+	%controls = RPGControlsBehavior.createInstance();
+	%hero.addBehavior(%controls);
+	
+	mainScene.add( %hero );
+	
+    	mainWindow.mount(%hero,"0 0", 10, false, 0);
+}

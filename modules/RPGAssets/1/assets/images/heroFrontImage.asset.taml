@@ -1,0 +1,7 @@
+<ImageAsset
+    AssetName="heroFrontImage"
+    ImageFile="heroFrontImage.png"
+    CellCountX="7"
+    CellCountY="1"
+    CellWidth="16"
+    CellHeight="22" />

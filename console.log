@@ -1,0 +1,122 @@
+//-------------------------- 4/3/2014 -- 20:08:42 -----
+--------------------------------------------------------------------------------
+Network initialization:
+--------------------------------------------------------------------------------
+CPU initialization:
+   Not supported in OS X (Cocoa)
+--------------------------------------------------------------------------------
+Math initialization:
+   Installing Standard C extensions
+--------------------------------------------------------------------------------
+Video initialization:
+--------------------------------------------------------------------------------
+Input initialization:
+--------------------------------------------------------------------------------
+Binding server port to default IP
+--------------------------------------------------------------------------------
+Module Manager: Started scanning '/Volumes/Storage 1/Games/Torque/RPG/modules'...
+Module Manager: Registering: '/Volumes/Storage 1/Games/Torque/RPG/modules/AppCore/1/module.taml' [ ID='AppCore', VersionId='1', BuildId='0', Description='Barebones startup module' ].
+Module Manager: Registering: '/Volumes/Storage 1/Games/Torque/RPG/modules/RPGAssets/1/module.taml' [ ID='RPGAssets', VersionId='1', BuildId='0', Description='RPG Assets.  Particularly useful for the RPG!' ].
+Module Manager: Registering: '/Volumes/Storage 1/Games/Torque/RPG/modules/RPGgame/1/module.taml' [ ID='RPGGame', VersionId='1', BuildId='0', Description='Blank Project as a Template.  You should probably rename this module!' ].
+Module Manager: Finished scanning '/Volumes/Storage 1/Games/Torque/RPG/modules'.
+--------------------------------------------------------------------------------
+Module Manager: Loading explicit module Id 'RPGGame' at version Id '0':
+Module Manager: Explicit load of module Id 'RPGGame' at version Id '0' and its dependencies is comprised of the following '3' module(s):
+> module Id 'AppCore' at version Id '1'
+> module Id 'RPGAssets' at version Id '1'
+> module Id 'RPGGame' at version Id '1'
+--------------------------------------------------------------------------------
+Module Manager: Loading explicit module Id 'AppCore' at version Id '1' using the script file '/Volumes/Storage 1/Games/Torque/RPG/modules/AppCore/1/main.cs'.
+using display 0x4273240
+Activating the OpenGL display device...
+ OpenGLDevice activating...
+OpenGL driver information:
+  Vendor: Intel Inc.
+  Renderer: Intel HD Graphics 3000 OpenGL Engine
+  Version: 2.1 INTEL-8.24.11
+OpenGL Init: Enabled Extensions
+  ARB_multitexture (Max Texture Units: 8)
+  EXT_blend_color
+  EXT_blend_minmax
+  EXT_texture_env_combine
+  EXT_packed_pixels
+  EXT_fog_coord
+  ARB_texture_compression
+  EXT_texture_compression_s3tc
+  (ARB|EXT)_texture_env_add
+  EXT_texture_filter_anisotropic (Max anisotropy: 16.000000)
+  Vertical Sync
+  ATI_FSAA
+OpenGL Init: Disabled Extensions
+  EXT_paletted_texture
+  EXT_compiled_vertex_array
+  NV_vertex_array_range
+  3DFX_texture_compression_FXT1
+
+ set screen mode 1024 x 768 x 32, windowed, force it, dont repaint
+Max Texture Size reported as: 8192
+ set screen mode 1024 x 768 x 32, windowed, dont force it, repaint
+Killing the texture manager...
+Resurrecting the texture manager...
+OpenAL Driver Init
+OpenAL Driver Init Success
+--------------------------------------------------------------------------------
+Module Manager: Loading group 'gameBase':
+Module Manager: No modules found for module group 'gameBase'.
+--------------------------------------------------------------------------------
+Module Manager: Loading explicit module Id 'RPGAssets' at version Id '1' using the script file ''.
+--------------------------------------------------------------------------------
+Module Manager: Loading explicit module Id 'RPGGame' at version Id '1' using the script file '/Volumes/Storage 1/Games/Torque/RPG/modules/RPGgame/1/main.cs'.
+@@@Loaded!!!
+modules/RPGgame/1/scripts/behaviors/movement/RPGControls.cs (29): Unknown command enableUpdateCallback.
+  Object (1125) Sprite -> SpriteBase -> SceneObject -> BehaviorComponent -> DynamicConsoleMethodComponent -> SimComponent -> SimObject
+modules/RPGgame/1/scripts/behaviors/movement/RPGControls.cs (42): Unable to find object: '' attempting to call function 'addBehaviorField'
+modules/RPGgame/1/scripts/addObjects.cs (26): Unknown command setCircleCollisionLocalPosition.
+  Object (1128) Sprite -> SpriteBase -> SceneObject -> BehaviorComponent -> DynamicConsoleMethodComponent -> SimComponent -> SimObject
+modules/RPGgame/1/scripts/addObjects.cs (26): Unknown command setCircleCollisionLocalPosition.
+  Object (1130) Sprite -> SpriteBase -> SceneObject -> BehaviorComponent -> DynamicConsoleMethodComponent -> SimComponent -> SimObject
+Asset Manager: Failed to acquire asset Id 'TropicalAssets:background' as it does not exist.
+Asset Manager: Failed to acquire asset Id 'TropicalAssets:rocksfar' as it does not exist.
+Asset Manager: Failed to acquire asset Id 'TropicalAssets:rocksnear' as it does not exist.
+--------------------------------------------------------------------------------
+Module Manager: Finish loading '3' explicit module(s).
+--------------------------------------------------------------------------------
+Debugger connection from 127.0.0.1
+@@@Update ANIMATION 1126
+@@@Update ANIMATION 1126
+@@@Update ANIMATION 1126
+@@@Update ANIMATION 1126
+@@@Update ANIMATION 1126
+@@@Update ANIMATION 1126
+@@@Update ANIMATION 1126
+@@@Update ANIMATION 1126
+@@@Update ANIMATION 1126
+@@@Update ANIMATION 1126
+@@@Update ANIMATION 1126
+@@@Update ANIMATION 1126
+@@@Update ANIMATION 1126
+@@@Update ANIMATION 1126
+@@@Update ANIMATION 1126
+@@@Update ANIMATION 1126
+@@@Update ANIMATION 1126
+@@@Update ANIMATION 1126
+@@@Update ANIMATION 1126
+@@@Update ANIMATION 1126
+@@@Update ANIMATION 1126
+@@@Update ANIMATION 1126
+@@@Update ANIMATION 1126
+@@@Update ANIMATION 1126
+@@@Update ANIMATION 1126
+@@@Update ANIMATION 1126
+@@@Update ANIMATION 1126
+@@@Update ANIMATION 1126
+--------------------------------------------------------------------------------
+Module Manager: Unloading explicit module Id 'RPGGame':
+--------------------------------------------------------------------------------
+Module Manager: Unload explicit module Id 'RPGGame' at version Id '1'.
+--------------------------------------------------------------------------------
+Module Manager: Unload explicit module Id 'RPGAssets' at version Id '1'.
+--------------------------------------------------------------------------------
+Module Manager: Unload explicit module Id 'AppCore' at version Id '1'.
+--------------------------------------------------------------------------------
+Module Manager: Finish unloading '3' explicit module(s).

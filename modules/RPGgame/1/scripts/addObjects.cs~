@@ -1,0 +1,23 @@
+function createTree(%this, %pos)
+{
+	%image = "RPGAssets:tree1";
+	%size = "20 20";
+	
+	%tree = new Sprite()
+	{
+		Image = %image;
+		//class = "tree";
+		position = %pos;
+		size = %size;
+		SceneLayer = "15";
+		SceneGroup = "15";
+		CollisionCallback = true;
+	};
+	
+	%tree.SetBodyType(static);
+	%tree.createPolygonBoxCollisionShape(%size);
+	%tree.setCollisionShapeIsSensor(0, false);
+	%tree.setCollisionGroups( "15");
+	
+	mainScene.add( %tree );
+}
